@@ -1,7 +1,7 @@
+import { z } from "zod";
 import { pgTable, uuid, text, timestamp } from "drizzle-orm/pg-core";
 import { usersSync as userSyncTable } from "drizzle-orm/neon";
 import { createSchemaFactory } from "drizzle-zod";
-import { z } from "zod";
 
 const { createInsertSchema, createSelectSchema, createUpdateSchema } =
   createSchemaFactory({ zodInstance: z });
